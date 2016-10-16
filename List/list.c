@@ -8,9 +8,6 @@ struct list* create_list(){
 }
 
 
-
-
-
 int is_empty(struct list *liste){
   if(liste->head == NULL){
     return 1;
