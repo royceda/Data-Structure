@@ -1,0 +1,14 @@
+#include <iostream>
+
+
+
+int main(){
+
+
+  int f[][] = new int[3][3];
+
+  int n = f.size();
+
+
+  return 0;
+}
