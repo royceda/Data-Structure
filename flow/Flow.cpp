@@ -23,7 +23,7 @@ Flow::Flow(const Flow& orig) {
 Flow::~Flow() {
 }
 
-
+//Augmented path
 int Flow::augmentFF(vector<vector<int> > flow, int val, int u, int t, vector<bool> visit){
   visit[u] = true;
 
@@ -56,6 +56,7 @@ int Flow::augmentFF(vector<vector<int> > flow, int val, int u, int t, vector<boo
 }
 
 
+//create reverse edge
 void Flow::addReverseEdge(){
   for(unsigned int i=0; i<_graph.size(); i++){
     for(unsigned int j=0; j<_graph[i].size(); j++){
@@ -68,6 +69,7 @@ void Flow::addReverseEdge(){
 }
 
 
+//seek max flow
 int Flow::fordFulkerson(int s, int t){
 
   int    n      = _graph.size();
